@@ -764,11 +764,273 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       <!-- Entitati section -->
       <section>
         <h2 id="entitati">Entitati</h2>
+        <p>
+          Nu toate caracterele pot fi introduse de la tastatură. De exemplu,
+          simbolul mărcii înregistrate ®, marca comercială ™, sau dreptul de
+          autor ©. Pentru a introduce astfel de caractere, utilizați entitățile.
+        </p>
+        <p>Interesant...!!!</p>
+        <p>
+          Standardul de codificare Unicode stochează caracterele majorității
+          limbilor vorbite în întreaga lume, precum și caracterele speciale și
+          rezervate. Entitățile sunt mnemonice de referință și indică
+          browserului ce caracter Unicode să fie afișat.
+        </p>
+        <p>
+          Entitățile reprezintă șiruri speciale pe care browserele le convertesc
+          în caractere. Înlocuirea poate fi făcută în mai multe moduri.
+        </p>
+        <ul>
+          <li>
+            (&)entitate; – pentru a introduce un caracter utilizând numele
+            entității sale.
+          </li>
+          <li>
+            (&)#COD10; – pentru a introduce un caracter folosind codul său
+            zecimal.
+          </li>
+          <li>
+            (&)#xCOD16; – pentru a introduce un caracter folosind codul său
+            hexazecimal.
+          </li>
+        </ul>
+        <p>
+          De exemplu, simbolul dreptului de autor © poate fi adăugat astfel.
+        </p>
+        <ul>
+          <li>(p)Toate drepturile rezervate (&)copy; Lex, 2020(/p)</li>
+          <li>(p)Toate drepturile rezervate (&)#169; Lex, 2020(/p)</li>
+          <li>(p)Toate drepturile rezervate(&)#xa9; Lex, 2020(/p)</li>
+        </ul>
+        <p>
+          Entitățile sunt folosite nu numai pentru introducerea caracterelor
+          care nu sunt pe tastatură, ci și pentru caractere care au un scop
+          special în HTML. De exemplu, dacă trebuie să afișați un text care
+          conține tag-uri în format text.
+        </p>
+        <p>Pentru semnul mai mic folosesti (&)lt;</p>
+        <p>Pentru semnul mai mare folosesti (&)gt;</p>
+        <p>
+          Pentru un text îngroșat, evidențiați-l cu tag-urile &lt;strong&gt; și
+          &lt;/strong&gt;.
+        </p>
+        <p>
+          Pe pagina oficială
+          <a
+            href="https://html.spec.whatwg.org/multipage/named-characters.html"
+            target="_blank"
+            rel="noopener"
+            >W3C</a
+          >
+          și serviciul de la
+          <a
+            href="https://www.toptal.com/designers/htmlarrows/symbols/"
+            target="_blank"
+            rel="noopener"
+            >Toptal </a
+          >, puteți găsi un mnemonic pentru orice simbol.
+        </p>
+        <p>Interesant...!!!</p>
+        <p>
+          Este posibil ca și caracterele speciale care nu au un mnemonic, să nu
+          se afișeze deloc sau să se afișeze incorect în unele browsere. În
+          acest caz, acestea sunt înlocuite cu iconițe (imagini).
+        </p>
       </section>
 
       <!-- Video si audio section -->
       <section>
         <h2 id="video">Video si audio</h2>
+
+        <p>
+          Înainte de HTML5, marcajul pentru video și audio era o sarcină
+          dificilă. Standardul modern a adăugat tag-uri noi pentru marcajul
+          conținutului media cu suport pentru diferite formate, controale
+          încorporate etc.
+        </p>
+
+        <!-- Video subsection -->
+        <section>
+          <h3>Video</h3>
+          <p>
+            Pentru marcajul conținutului video se folosește tag-ul pereche
+            &lt;video&gt;.
+          </p>
+          <p>
+            &lt;video src="http://techslides.com/demos/sample-videos/small.webm"
+            <br />
+            poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+            <br />
+            width="640" <br />
+            controls <br />
+            autoplay <br />
+            loop <br />
+            preload="auto" <br />
+            &gt;&lt;/video&gt;
+          </p>
+          <p>Să aruncăm o privire la atribute.</p>
+          <ul>
+            <li>src – specifică adresa fișierului video.</li>
+            <li>
+              poster – adresa imaginii care este folosită ca poster dacă
+              videoclipul nu este încărcat sau nu este încă redat.
+            </li>
+            <li>
+              width și height – setează înălțimea și lățimea, ca și în cazul
+              imaginii.
+            </li>
+            <li>
+              controls – un atribut verificat, dacă este prezent – se adaugă
+              controale video.
+            </li>
+            <li>
+              autoplay – un atribut verificat, dacă este prezent – redarea
+              videoclipului va începe imediat ce devine disponibilă.
+            </li>
+            <li>
+              loop – un atribut verificat, dacă este prezent – videoclipul se va
+              repeta în buclă.
+            </li>
+            <p>
+              Atributul preload specifică modul de preîncărcare a videoclipului.
+              Valoarea acestuia specifică ce informație va fi încărcată.
+              Valoarea implicită depinde de browserul în care a fost deschisă
+              pagina web.
+            </p>
+            <li>none – nu încărcați videoclipul în prealabil.</li>
+            <li>metadata – încărcați metadate (durata etc.).</li>
+            <li>auto – încărcați tot videoclipul în prealabil.</li>
+          </ul>
+
+          <!-- Formate video subsection -->
+          <section>
+            <h4>Formate video</h4>
+            <p>
+              Încărcarea unui singur format de fișier video nu este suficientă,
+              este posibil ca unele browsere să nu îl suporte și utilizatorul nu
+              va putea viziona videoclipul. Există mai multe formate video
+              populare care trebuie furnizate browserului din care să aleagă:
+              webm, mp4 și ogg.
+            </p>
+            <p>
+              Pentru a face acest lucru, eliminăm atributul src din tag-ul
+              &lt;video&gt; și adăugăm un tag nou &lt;source&gt; pentru fiecare
+              format. În atributul src, specificăm adresa fișierului video, iar
+              în atributul type, formatul video. Browserul îl va selecta și
+              încărca pe primul din listă pe care îl suportă, ignorându-le pe
+              celelalte.
+            </p>
+            <p>
+              &lt;video <br />
+              poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+              <br />
+              width="640" <br />
+              controls <br />
+              &gt; <br />
+              &lt;source <br />
+              src="http://techslides.com/demos/sample-videos/small.webm" <br />
+              type="video/webm" <br />
+              /&gt; <br />
+              &lt;source <br />
+              src="http://techslides.com/demos/sample-videos/small.mp4" <br />
+              type="video/mp4" <br />
+              /&gt; <br />
+              &lt;source <br />
+              src="http://techslides.com/demos/sample-videos/small.ogv" <br />
+              type="video/ogg" <br />
+              /&gt; <br />
+              &lt;/video&gt;
+            </p>
+          </section>
+          <p>Interesant...!!!</p>
+          <p>
+            Conversia video și audio în formatele necesare este
+            responsabilitatea creatorului de conținut, a managerului de conținut
+            sau, în cazuri extreme, a developerului.
+          </p>
+        </section>
+
+        <!-- Audio subsection -->
+        <section>
+          <h3>Audio</h3>
+          <p>
+            Tag-ul &lt;audio&gt; este folosit pentru a marca un conținut audio.
+            Utilizarea sa este foarte asemănătoare cu &lt;video&gt;, dar puteți
+            specifica mai puține atribute.
+          </p>
+          <p>
+            &lt;audio src="song.mp3" controls autoplay loop
+            preload="auto"&gt;&lt;/audio&gt;
+          </p>
+          <p>Să aruncăm o privire la atribute.</p>
+          <ul>
+            <li>src – specifică adresa fișierului audio.</li>
+            <li>
+              controls – un atribut verificat, dacă este prezent – se adaugă
+              controale audio.
+            </li>
+            <li>
+              autoplay – un atribut verificat, dacă este prezent – redarea audio
+              va începe imediat ce devine disponibilă.
+            </li>
+            <li>
+              loop – un atribut verificat, dacă este prezent – audio se va
+              repeta în buclă.
+            </li>
+            <p>
+              Atributul preload specifică modul de preîncărcare a fișierului
+              audio. Valoarea acestuia specifică ce informație va fi încărcată.
+              Valoarea implicită depinde de browserul în care a fost deschisă
+              pagina web.
+            </p>
+            <li>none – nu încărcați fișierul audio în prealabil.</li>
+            <li>metadata – încărcați metadate (durata etc.).</li>
+            <li>auto – încărcați tot fișierul audio în prealabil.</li>
+          </ul>
+
+          <!-- Formate audio subsection -->
+          <section>
+            <h4>Formate audio</h4>
+            <p>
+              Formatele audio sunt mai bine suportate de browserele web. Toate
+              browserele moderne suportă garantat unul dintre cele două formate:
+              mp3 sau ogg.
+            </p>
+            <p>
+              Ca și în cazul cu video, eliminăm atributul src și folosim tag-ul
+              <source />
+              cu atributele src și type.
+            </p>
+            <p>
+              &lt;audio controls&gt; <br />
+              &lt;source src="song.mp3" type="audio/mp3" /&gt; <br />
+              &lt;source src="song.ogg" type="audio/ogg" /&gt; <br />
+              &lt; /audio&gt;
+            </p>
+          </section>
+        </section>
+
+        <!-- Suport pentru browsere mai vechi subsection -->
+        <section>
+          <h3>Suport pentru browsere mai vechi</h3>
+          <p>
+            Dacă browserul este foarte vechi și nu suportă conținut media HTML5,
+            trebuie să-i comunicați utilizatorului. Pentru a face acest lucru,
+            în interiorul tag-urilor &lt;video&gt; sau &lt;audio&gt;, după toate
+            tag-urile &lt;source&gt;, adăugați o linie de text pe care browserul
+            o va afișa dacă nu acceptă conținut media.
+          </p>
+          <h4>Pentru video</h4>
+          <p>
+            Your browser does not support the &lt;code&gt;video&lt;/code&gt;
+            element.
+          </p>
+          <h4>Pentru audio</h4>
+          <p>
+            Your browser does not support the &lt;code&gt;audio&lt;/code&gt;
+            element.
+          </p>
+        </section>
       </section>
     </main>
 
