@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <!-- Head -->
   <head>
     <meta charset="UTF-8" />
@@ -542,35 +542,27 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <h3 id="supsub">Tag-urile (sup) și (sub)</h3>
             <ul>
               <!-- Tag (sup) -->
-              <div>
-                <li>
-                  <h4>Tag (sup)</h4>
-                </li>
-                <p>Formula Acid Sulfuric : H<sub>2</sub>SO<sub>4</sub></p>
-              </div>
+              <li>
+                <h4>Tag (sup)</h4>
+                Formula Acid Sulfuric : H<sub>2</sub>SO<sub>4</sub>
+              </li>
 
               <!-- Tag (sub) -->
-              <div>
-                <li>
-                  <h4>Tag (sub)</h4>
-                </li>
-                <p>
-                  "Teorema triunghi dreptunghic
-                  :C1<sup>2</sup>+C2<sup>2</sup>=Ip<sup>2</sup>
-                </p>
-              </div>
+              <li>
+                <h4>Tag (sub)</h4>
+                Teorema triunghi dreptunghic
+                :C1<sup>2</sup>+C2<sup>2</sup>=Ip<sup>2</sup>
+              </li>
 
               <!-- Tag (sup)+(sub) -->
-              <div>
-                <li><h4>Tag (sup)+(sub)</h4></li>
-                <p>
-                  "Teorema triunghi dreptunghic :
-                  C<sub>1</sub>><sup>2</sup>+C<sub>2</sub>><sup>2</sup>=Ip<sup
-                    >2</sup
-                  >
-                </p>
+              <li>
+                <h4>Tag (sup)+(sub)</h4>
+                Teorema triunghi dreptunghic :
+                C<sub>1</sub>><sup>2</sup>+C<sub>2</sub>><sup>2</sup>=Ip<sup
+                  >2</sup
+                >
                 <p>Observatie: nu prea merge combinat ?!!!???</p>
-              </div>
+              </li>
             </ul>
           </li>
 
@@ -620,7 +612,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     >15 iunie 1977 la ora 04:00
                   </time>
                   in Timisoara si nasterea a durat cel putin
-                  <time datetime="PTH2H45M">2h 45min</time>.
+                  <time datetime="02:45">2h 45min</time>.
                 </p>
               </li>
             </ul>
@@ -865,8 +857,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
             controls <br />
             autoplay <br />
             loop <br />
-            preload="auto" <br />
-            &gt;&lt;/video&gt;
+            preload="auto" &gt;<br />&lt;/video&gt;
           </p>
           <p>Să aruncăm o privire la atribute.</p>
           <ul>
@@ -891,16 +882,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
               loop – un atribut verificat, dacă este prezent – videoclipul se va
               repeta în buclă.
             </li>
-            <p>
-              Atributul preload specifică modul de preîncărcare a videoclipului.
-              Valoarea acestuia specifică ce informație va fi încărcată.
-              Valoarea implicită depinde de browserul în care a fost deschisă
-              pagina web.
-            </p>
             <li>none – nu încărcați videoclipul în prealabil.</li>
             <li>metadata – încărcați metadate (durata etc.).</li>
             <li>auto – încărcați tot videoclipul în prealabil.</li>
           </ul>
+          <p>
+            Atributul preload specifică modul de preîncărcare a videoclipului.
+            Valoarea acestuia specifică ce informație va fi încărcată. Valoarea
+            implicită depinde de browserul în care a fost deschisă pagina web.
+          </p>
 
           <!-- Formate video subsection -->
           <section>
@@ -977,16 +967,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
               loop – un atribut verificat, dacă este prezent – audio se va
               repeta în buclă.
             </li>
-            <p>
-              Atributul preload specifică modul de preîncărcare a fișierului
-              audio. Valoarea acestuia specifică ce informație va fi încărcată.
-              Valoarea implicită depinde de browserul în care a fost deschisă
-              pagina web.
-            </p>
             <li>none – nu încărcați fișierul audio în prealabil.</li>
             <li>metadata – încărcați metadate (durata etc.).</li>
             <li>auto – încărcați tot fișierul audio în prealabil.</li>
           </ul>
+          <p>
+            Atributul preload specifică modul de preîncărcare a fișierului
+            audio. Valoarea acestuia specifică ce informație va fi încărcată.
+            Valoarea implicită depinde de browserul în care a fost deschisă
+            pagina web.
+          </p>
 
           <!-- Formate audio subsection -->
           <section>
@@ -998,8 +988,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <p>
               Ca și în cazul cu video, eliminăm atributul src și folosim tag-ul
-              <source />
-              cu atributele src și type.
+              &lt;source /&gt; cu atributele src și type.
             </p>
             <p>
               &lt;audio controls&gt; <br />
