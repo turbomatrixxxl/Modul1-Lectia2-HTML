@@ -68,7 +68,7 @@
 
         <!-- Exemplu tabel 1 -->
         <h3>Tabel simplu</h3>
-        <h2><b>Orar de studiu saptamanal</b></h2>
+        <h4><b>Orar de studiu saptamanal</b></h4>
         <table>
           <tr>
             <td>Zi din saptamana</td>
@@ -111,6 +111,234 @@
             <td>00.00-00.00</td>
           </tr>
         </table>
+
+        <!-- Tabel cu antet coloane -->
+        <h3>Tabel cu celule antet pentru coloane</h3>
+        <h4><b>Orar de studiu saptamanal 2</b></h4>
+        <table>
+          <tr>
+            <th>Zi din saptamana</th>
+            <th>Tip studiu</th>
+            <th>Perioada alocata studiu</th>
+          </tr>
+          <tr>
+            <td>Luni</td>
+            <td>Conspect pentru marti+tema</td>
+            <td>10.00-19.00</td>
+          </tr>
+          <tr>
+            <td>Marti</td>
+            <td>Curs online</td>
+            <td>19.30-21.30</td>
+          </tr>
+          <tr>
+            <td>Miercuri</td>
+            <td>Conspect pentru joi+inregistrare curs de marti</td>
+            <td>08.00-19.00</td>
+          </tr>
+          <tr>
+            <td>Joi</td>
+            <td>Curs online</td>
+            <td>19.30-21.30</td>
+          </tr>
+          <tr>
+            <td>Vineri</td>
+            <td>Conspect pentru marti+inregistrare de joi</td>
+            <td>08.00-19.00</td>
+          </tr>
+          <tr>
+            <td>Sambata</td>
+            <td>Lucru pentru proiecte</td>
+            <td>10.00-16.00</td>
+          </tr>
+          <tr>
+            <td>Duminica</td>
+            <td>Liber</td>
+            <td>00.00-00.00</td>
+          </tr>
+        </table>
+
+        <!-- Tabel cu sectiuni -->
+        <h3>Tabel cu structura sectiuni (thead,tbody,tfoot)</h3>
+        <h4><b>Orar de studiu saptamanal 3</b></h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Zi din saptamana</th>
+              <th>Tip studiu</th>
+              <th>Perioada alocata studiu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luni</td>
+              <td>Conspect pentru marti+tema</td>
+              <td>10.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Marti</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Miercuri</td>
+              <td>Conspect pentru joi+inregistrare curs de marti</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Joi</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Vineri</td>
+              <td>Conspect pentru marti+inregistrare de joi</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Sambata</td>
+              <td>Lucru pentru proiecte</td>
+              <td>10.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Duminica</td>
+              <td>Liber</td>
+              <td>00.00-00.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Zi din saptamana</th>
+              <th>Tip studiu</th>
+              <th>Perioada alocata studiu</th>
+            </tr>
+          </tfoot>
+        </table>
+        <p>Observatie: Nu prea se vad schimbari....!</p>
+
+        <!-- Tabel cu titlu -->
+        <h3>Tabel cu titlu</h3>
+        <table>
+          <caption>
+            <h4><b>Orar de studiu saptamanal 4</b></h4>
+          </caption>
+          <thead>
+            <tr>
+              <th>Zi din saptamana</th>
+              <th>Tip studiu</th>
+              <th>Perioada alocata studiu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luni</td>
+              <td>Conspect pentru marti+tema</td>
+              <td>10.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Marti</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Miercuri</td>
+              <td>Conspect pentru joi+inregistrare curs de marti</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Joi</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Vineri</td>
+              <td>Conspect pentru marti+inregistrare de joi</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Sambata</td>
+              <td>Lucru pentru proiecte</td>
+              <td>10.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Duminica</td>
+              <td>Liber</td>
+              <td>00.00-00.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Zi din saptamana</th>
+              <th>Tip studiu</th>
+              <th>Perioada alocata studiu</th>
+            </tr>
+          </tfoot>
+        </table>
+
+        <!-- Tabel cu grupare celule -->
+        <h3>Grupare celule (rowspan si colspan)</h3>
+        <table>
+          <caption>
+            <h4><b>Orar de studiu saptamanal 4</b></h4>
+          </caption>
+          <thead>
+            <tr>
+              <th>Zi din saptamana</th>
+              <th>Tip studiu</th>
+              <th>Perioada alocata studiu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luni</td>
+              <td>Conspect pentru marti+tema</td>
+              <td>10.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Marti</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Miercuri</td>
+              <td>Conspect pentru joi+inregistrare curs de marti</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Joi</td>
+              <td>Curs online</td>
+              <td>19.30-21.30</td>
+            </tr>
+            <tr>
+              <td>Vineri</td>
+              <td>Conspect pentru marti+inregistrare de joi</td>
+              <td>08.00-19.00</td>
+            </tr>
+            <tr>
+              <td>Sambata</td>
+              <td>Lucru pentru proiecte</td>
+              <td>10.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Duminica</td>
+              <td>Liber</td>
+              <td>00.00-00.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th rowspan="3">Orar de lucru Naramzoiu Radu Bogdan</th>
+              <th colspan="2">Zi din saptamana</th>
+            </tr>
+            <tr>
+              <th colspan="2">Tip studiu</th>
+            </tr>
+            <tr>
+              <th colspan="2">Perioada alocata studiu</th>
+            </tr>
+          </tfoot>
+        </table>
+        <p>Observatie: In (tfoot)</p>
       </section>
 
       <!-- Marcaj text section -->
